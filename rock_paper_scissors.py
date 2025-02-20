@@ -6,7 +6,7 @@ def get_user_choice():
     while user_choice not in valid_choices:
         print("Invalid choice. Please try again.")
         user_choice = input("Choose rock, paper, or scissors: ").lower()
-    return user_choice
+        return user_choice
 
 def get_computer_choice():
     return random.choice(['rock', 'paper', 'scissors'])
@@ -25,7 +25,7 @@ def play_game():
     print("Welcome to Rock, Paper, Scissors!")
     while True:
         user_choice = get_user_choice()
-        computer_choice = get_computer_choice()
+        computer_choice = get_computer_choice
         print(f"Computer chose: {computer_choice}")
         result = determine_winner(user_choice, computer_choice)
         print(result)
@@ -35,5 +35,5 @@ def play_game():
             print("Thanks for playing!")
             break
 
-if __name__ == "__main__":
-    play_game()
+        if __name__ == "__main__":
+        play_game()
